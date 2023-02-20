@@ -35,7 +35,7 @@ app.use(cookieParser());
 app.use('/', express.static(path.join(__dirname, '/public')));
 
 // routes
-app.use('/api/bsd_weather/v1/', router);
+app.use('/api/escooter/v1/', router);
 
 app.all('*', (req, res) => {
     res.status(404);
